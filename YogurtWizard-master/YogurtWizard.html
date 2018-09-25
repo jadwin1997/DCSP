@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Yogurt Builder</title>
+<link rel="stylesheet" type="text/css" href="YogurtWizard.css">
+</head>
+<body>
+<script>
+
+  //Script to show/hide images if checkbox
+  //value changes
+  function toggleVisibility(id) {
+   var el = document.getElementById(id);
+    
+   if (el.style.visibility=="visible") { 
+          el.style.visibility="hidden";
+     }
+     else {
+          el.style.visibility="visible";
+     }
+ }
+</script>
+
+<div class="content">
+  <h1>Toppings:</h1>
+  <ul>
+    <form method="get" action="YogurtWizard.php">
+    <li><input type="checkbox" id="t1" name = "top[]" value = "Gummy Bear" onChange="toggleVisibility('top1');">Gummy Bear</li>
+    <li><input type="checkbox" id="t2" name = "top[]" value = "Oreo" onChange="toggleVisibility('top2');">Oreo</li>
+    <li><input type="checkbox" id="t3" name = "top[]" value = "Strawberry" onChange="toggleVisibility('top3');">Strawberry</li>
+    <li><input type="submit" value="Submit"></li>
+  </form>
+  </ul>
+
+  <img alt="Cup" id="character" src="YogurtCup.png">
+  
+  <img alt="Oreo" id="top2" src="YogurtCupOreo.png" style="visibility:hidden"/>
+  <img alt="Strawberry" id="top3" src="YogurtCupStrawberry.png" style="visibility:hidden"/>
+  <img alt="Bears" id="top1" src="YogurtCupBears.png" style="visibility:hidden"/>
+</div>
+<div class="bckgrnd"></div>
+</body>
+</html>

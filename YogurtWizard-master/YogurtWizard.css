@@ -1,0 +1,51 @@
+body{
+
+  font-family: 'Ubuntu', sans-serif;
+}
+
+img {
+	position: absolute;
+
+display:inline-block;
+  height:100px 100px;
+}
+
+
+
+ul{
+	list-style-type: none;
+	display:inline-block;
+}
+.bckgrnd{
+  position: fixed;
+background-image: url("CrazyCows.jpg");
+ width: 1920px;
+ height:1080px;
+
+ filter: blur(5px);
+}
+.content {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
