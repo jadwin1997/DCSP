@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Yogurt Builder</title>
+<link rel="stylesheet" type="text/css" href="YogurtWizardScrollable.css">
+</head>
+<body>
+<script>
+
+  //Script to show/hide images if checkbox
+  //value changes
+  function toggleVisibility(id) {
+   var el = document.getElementById(id);
+  
+   if (el.style.visibility=="visible") { 
+          el.style.visibility="hidden";
+     }
+     else {
+          el.style.visibility="visible";
+     }
+ }
+</script>
+
+<div class="content">
+  <h1>Flavors:</h1>
+  <ul> 
+    <form method="get" action="YogurtWizard.php">
+    <li><input type="checkbox" id="Flav1" name = "top[]" value = "Strawberry" onChange="toggleVisibility('F1');" unchecked>Strawberry</li>
+    <li><input type="checkbox" id="Flav2" name = "top[]" value = "Chocolate" onChange="toggleVisibility('F2');" unchecked>Chocolate</li>
+  </ul>
+  <h1>Toppings:</h1> 
+  <ul> 
+    <li><input type="checkbox" id="t1" name = "top[]" value = "Gummy Bear" onChange="toggleVisibility('top1');" unchecked>Gummy Bear</li>
+    <li><input type="checkbox" id="t2" name = "top[]" value = "Oreo" onChange="toggleVisibility('top2');" unchecked>Oreo</li>
+    <li><input type="checkbox" id="t3" name = "top[]" value = "StrawberryT" onChange="toggleVisibility('top3');" unchecked>Strawberry</li>
+    <input type="submit" value="Submit"></li>
+  </form>
+  </ul>
+</div>
+<div class="cup1">
+  <img alt="Cup" id="yocup" src="YogurtCup.png">
+  <img alt="StrawberryF" id="F1" src="StrawberryFlavor.png" style="visibility:hidden"/>
+  <img alt="Chocolate" id="F2" src="ChocolateFlavor.png" style="visibility:hidden"/>
+
+  <img alt="Oreo" id="top2" src="YogurtCupOreo.png" style="visibility:hidden"/>
+  <img alt="StrawberryT" id="top3" src="YogurtCupStrawberry.png" style="visibility:hidden"/>
+  <img alt="Bears" id="top1" src="YogurtCupBears.png" style="visibility:hidden"/>
+
+</div>
+<div class="bckgrnd"></div>
+</body>
+</html>

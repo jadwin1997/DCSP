@@ -1,0 +1,62 @@
+body{
+  font-size: 170%;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+img {
+	position: absolute;
+
+  display:inline-block;
+  height:300px;
+}
+
+
+
+ul{
+	list-style-type: none;
+	display:inline-block;
+}
+.bckgrnd{
+  position: absolute;
+background-image: url("WizardCow.jpg");
+ width: 1920px;
+ height:1080px;
+ z-index: -1000;
+
+ filter: blur(5px);
+}
+.content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.cup1{
+  position: fixed;
+  margin-left: 70%;
+  width: 50%;
+  z-index: 1001;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
